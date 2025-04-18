@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akhila.arshuttle">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <application>
+        <meta-data android:name="unity.camera_usage_description"
+            android:value="Needed to place AR content using the camera." />
+        <activity android:name="com.unity3d.player.UnityPlayerActivity"
+                  android:exported="true"
+                  android:label="AR Shuttle"
+                  android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|uiMode"
+                  android:screenOrientation="fullSensor"
+                  android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+
